@@ -3,19 +3,8 @@ using Xunit;
 
 namespace CSI6111.UnitTests
 {
-    public class UnitTest1
+    public class CourseTest
     {
-        [Fact]
-        public void Should_Authenicate_User()
-        {
-            throw new NotImplementedException();
-        }
-
-        [Fact]
-        public void Should_Reject_Unauthenicated_User()
-        {
-            throw new NotImplementedException();
-        }
 
         [Fact]
         public void Should_Allow_Client_StudentIDEntry()
