@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CSI6111.Shared
 {
@@ -9,6 +7,9 @@ namespace CSI6111.Shared
         bool Run();
     }
 
+    /// <summary>
+    /// Logoff the User
+    /// </summary>
     public class Logoff : MarshalByRefObject, ILogoff
     {
         public bool Run()

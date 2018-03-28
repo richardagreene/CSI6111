@@ -1,12 +1,8 @@
 ﻿using CSI6111.Shared;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSI6111.ServerSide
 {
@@ -27,6 +23,11 @@ namespace CSI6111.ServerSide
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Register the command
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="command"></param>
         private static void RegisterCommand(string name, Type command)
         {
             WellKnownServiceTypeEntry remObj = new WellKnownServiceTypeEntry

@@ -13,10 +13,11 @@ namespace CSI6111.Client
             InitializeComponent();
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
-        {
-        }
-
+        /// <summary>
+        /// Connection 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConnect_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
@@ -35,6 +36,11 @@ namespace CSI6111.Client
             SetMainFormField();
         }
 
+        /// <summary>
+        /// Set up the form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MainForm_Load(object sender, EventArgs e)
         {
             SetMainFormField();
@@ -54,12 +60,16 @@ namespace CSI6111.Client
             Cursor.Current = Cursors.Default;
         }
 
+        /// <summary>
+        /// Evaluate the results
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSend_Click_1(object sender, EventArgs e)
         {
             var results = tbxResults.Text.Split('\n').Select(x => int.Parse(x)).ToArray();
             var result = _connection.Evaluate(tbxStudentId.Text, results);
             tbxEvaluationResult.Text = result;
-
         }
     }
 }

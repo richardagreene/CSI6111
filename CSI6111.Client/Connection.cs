@@ -1,12 +1,9 @@
 ﻿using CSI6111.Shared;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSI6111.Client
 {
@@ -29,6 +26,12 @@ namespace CSI6111.Client
 
         public bool LoggedIn { get { return _loggedIn; } }
 
+        /// <summary>
+        /// Connect to the server
+        /// </summary>
+        /// <param name="host"></param>
+        /// <param name="port"></param>
+        /// <returns></returns>
         public bool Connect(string host, string port)
         {
             _host = host;
@@ -49,6 +52,10 @@ namespace CSI6111.Client
             }
         }
 
+        /// <summary>
+        /// Disconenct the client from the server
+        /// </summary>
+        /// <returns></returns>
         public bool Disconnect()
         {
             ChannelServices.UnregisterChannel(_channel);
@@ -75,6 +82,12 @@ namespace CSI6111.Client
             return _loggedIn;
         }
 
+        /// <summary>
+        /// Evaluate the results
+        /// </summary>
+        /// <param name="studentId"></param>
+        /// <param name="courseResults"></param>
+        /// <returns></returns>
         public string Evaluate(string studentId, int[] courseResults)
         {
             var result = "";
@@ -90,6 +103,10 @@ namespace CSI6111.Client
             return result;
         }
 
+        /// <summary>
+        /// Logoff the User
+        /// </summary>
+        /// <returns></returns>
         public bool Logoff()
         {
             try

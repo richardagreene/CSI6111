@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSI6111.Shared
 {
@@ -11,6 +7,9 @@ namespace CSI6111.Shared
         bool Run();
     }
 
+    /// <summary>
+    /// OK
+    /// </summary>
     public class RuOK : MarshalByRefObject, IRuOK
     {
         public bool Run() { return true; }

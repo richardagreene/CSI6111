@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace CSI6111.Shared
 {
@@ -10,7 +8,9 @@ namespace CSI6111.Shared
         string Run(string studentId, int[] results);
     }
 
-
+    /// <summary>
+    /// Evaluate logic
+    /// </summary>
     public class Evaluate : MarshalByRefObject, IEvaluate
     {
         /// <summary>
