@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CSI6111.Client
@@ -51,6 +52,14 @@ namespace CSI6111.Client
                 btnConnect.Text = "Disconnect";
             }
             Cursor.Current = Cursors.Default;
+        }
+
+        private void btnSend_Click_1(object sender, EventArgs e)
+        {
+            var results = tbxResults.Text.Split('\n').Select(x => int.Parse(x)).ToArray();
+            var result = _connection.Evaluate(tbxStudentId.Text, results);
+            tbxEvaluationResult.Text = result;
+
         }
     }
 }

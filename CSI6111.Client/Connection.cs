@@ -75,6 +75,21 @@ namespace CSI6111.Client
             return _loggedIn;
         }
 
+        public string Evaluate(string studentId, int[] courseResults)
+        {
+            var result = "";
+            try
+            {
+                IEvaluate command = (IEvaluate)Activator.GetObject(typeof(IEvaluate), $"tcp://{_host}:{_port}/{nameof(Evaluate)}");
+                result = command.Run(studentId, courseResults);
+            }
+            catch (SocketException ex)
+            {
+                return "There was an error doing evaluation.";
+            }
+            return result;
+        }
+
         public bool Logoff()
         {
             try

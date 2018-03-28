@@ -20,7 +20,7 @@ namespace CSI6111.ServerSide
             // -- Register any commands --
             RegisterCommand(nameof(Login), typeof(Login));
             RegisterCommand(nameof(Logoff), typeof(Logoff));
-            RegisterCommand(nameof(Course), typeof(Course));
+            RegisterCommand(nameof(Evaluate), typeof(Evaluate));
             RegisterCommand(nameof(RuOK), typeof(RuOK));
 
             Console.WriteLine("Press [ENTER] to exit.");
