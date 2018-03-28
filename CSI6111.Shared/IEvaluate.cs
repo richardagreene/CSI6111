@@ -27,20 +27,24 @@ namespace CSI6111.Shared
             if (results.Length > 30) return "To many results entered; should be at max 30";
 
             // show list in order
+            Console.WriteLine($"--- All results in order of entry ---");
             foreach (var result in results)
                 Console.WriteLine($"Entered {result}");
 
             // show top 8 results
             var top8 = results.OrderByDescending(x => x).Take(8);
+            Console.WriteLine($"--- Top 8 Results ---");
             foreach (var result in top8)
                 Console.WriteLine($"Entered {result}");
 
             // Calc Average of top 8
             var top8Average = top8.Average();
+            Console.WriteLine($"--- Top 8 Result Average ---");
             Console.WriteLine($"Average {top8Average}");
 
             // Calc course Average
             var courseAverage = results.Average();
+            Console.WriteLine($"--- Course Average ---");
             Console.WriteLine($"Average {courseAverage}");
 
             // Evalaute results
