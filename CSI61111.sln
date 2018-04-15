@@ -9,6 +9,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI6111.Shared", "CSI6111.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI6111.Client", "CSI6111.Client\CSI6111.Client.csproj", "{DAE14292-BB19-407C-9C5A-F48D051DB2B0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dist", "dist", "{857C4AF0-75AC-4971-92C4-FF0B0B5275E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{1DC66DA3-5EC3-40EA-8A34-8539F09755A9}"
+	ProjectSection(SolutionItems) = preProject
+		dist\Client\CSI6111.Client.exe = dist\Client\CSI6111.Client.exe
+		dist\Client\CSI6111.Client.exe.config = dist\Client\CSI6111.Client.exe.config
+		dist\Client\CSI6111.Shared.dll = dist\Client\CSI6111.Shared.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{D6F931D5-44C1-4968-8C13-7F01F50314B3}"
+	ProjectSection(SolutionItems) = preProject
+		dist\Server\CSI6111.Shared.dll = dist\Server\CSI6111.Shared.dll
+		dist\Server\CSI61111.ServerSide.exe = dist\Server\CSI61111.ServerSide.exe
+		dist\Server\CSI61111.ServerSide.exe.config = dist\Server\CSI61111.ServerSide.exe.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +46,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1DC66DA3-5EC3-40EA-8A34-8539F09755A9} = {857C4AF0-75AC-4971-92C4-FF0B0B5275E6}
+		{D6F931D5-44C1-4968-8C13-7F01F50314B3} = {857C4AF0-75AC-4971-92C4-FF0B0B5275E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB7FEFDA-2ED8-4275-9995-E383F449A790}
