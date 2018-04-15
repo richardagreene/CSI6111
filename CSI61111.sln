@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI61111.ServerSide", "CSI61111.ServerSide\CSI61111.ServerSide.csproj", "{3BCAE65E-328A-4C5E-9899-CDE9718043F6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI6111.Shared", "CSI6111.Shared\CSI6111.Shared.csproj", "{246A4F2A-2DFB-4982-A267-ACD8FC3601A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI6111.Client", "CSI6111.Client\CSI6111.Client.csproj", "{DAE14292-BB19-407C-9C5A-F48D051DB2B0}"
@@ -25,16 +23,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{D6F931
 		dist\Server\CSI61111.ServerSide.exe.config = dist\Server\CSI61111.ServerSide.exe.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI6111.ServerSide", "CSI6111.ServerSide\CSI6111.ServerSide.csproj", "{3BCAE65E-328A-4C5E-9899-CDE9718043F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{246A4F2A-2DFB-4982-A267-ACD8FC3601A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{246A4F2A-2DFB-4982-A267-ACD8FC3601A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246A4F2A-2DFB-4982-A267-ACD8FC3601A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +39,10 @@ Global
 		{DAE14292-BB19-407C-9C5A-F48D051DB2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAE14292-BB19-407C-9C5A-F48D051DB2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAE14292-BB19-407C-9C5A-F48D051DB2B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BCAE65E-328A-4C5E-9899-CDE9718043F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

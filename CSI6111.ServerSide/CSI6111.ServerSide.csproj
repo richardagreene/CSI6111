@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3BCAE65E-328A-4C5E-9899-CDE9718043F6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSI61111.ServerSide</RootNamespace>
-    <AssemblyName>CSI61111.ServerSide</AssemblyName>
+    <RootNamespace>CSI6111.ServerSide</RootNamespace>
+    <AssemblyName>CSI6111.ServerSide</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
